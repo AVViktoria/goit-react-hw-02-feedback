@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/AVViktoria/goit-react-hw-02-feedback.git/static/css/main.7acaea2f.css",
-    "main.js": "/AVViktoria/goit-react-hw-02-feedback.git/static/js/main.07d3183d.js",
+    "main.css": "/AVViktoria/goit-react-hw-02-feedback.git/static/css/main.cfe2f523.css",
+    "main.js": "/AVViktoria/goit-react-hw-02-feedback.git/static/js/main.55357ab9.js",
     "index.html": "/AVViktoria/goit-react-hw-02-feedback.git/index.html",
-    "main.7acaea2f.css.map": "/AVViktoria/goit-react-hw-02-feedback.git/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/AVViktoria/goit-react-hw-02-feedback.git/static/js/main.07d3183d.js.map"
+    "main.cfe2f523.css.map": "/AVViktoria/goit-react-hw-02-feedback.git/static/css/main.cfe2f523.css.map",
+    "main.55357ab9.js.map": "/AVViktoria/goit-react-hw-02-feedback.git/static/js/main.55357ab9.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/css/main.cfe2f523.css",
+    "static/js/main.55357ab9.js"
   ]
 }
