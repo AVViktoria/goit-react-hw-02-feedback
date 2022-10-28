@@ -31,7 +31,7 @@ class App extends Component {
   //*  total Fn   //
   countTotalFeedback = () => {
     const { good, neutral, bad } = this.state;
-    return (good + neutral + bad);
+    return good + neutral + bad;
   }
 
   //*  percentage Fn   //
@@ -45,23 +45,20 @@ class App extends Component {
     const { good, neutral, bad } = this.state;
     const options = Object.keys(this.state);
     return (
-        <Section title = "Please leave feedback">
-
-        <FeedbackOptions
+      <>
+        <Section title="Please leave feedback">
+           <FeedbackOptions
           options={options}
           onLeaveFeedback={this.handleLeaveFeedback}
-        // onGood={this.handleGood}
-        // onNeutral={this.handleNeutral}
-        // onBad={this.handleBad}
         />
-<h2>Statistics</h2>
-
-        {!this.countTotalFeedback() ?
-        
+        </Section>
+        <Section title = "Statistics">
+          {!this.countTotalFeedback() ?
           <Notification message="There is no feedback" /> :
-          <Statistics good={good} neutral={neutral} bad={bad} total={this.countTotalFeedback()} positiveFeedback={this.countPositiveFeedbackPercentage()} />
-        }
-    </Section>
+          <Statistics good={good} neutral={neutral} bad={bad} total={this.countTotalFeedback()} positiveFeedback={this.countPositiveFeedbackPercentage()} />}
+        </Section>
+      </>
+        
     );
   }
 }
@@ -71,9 +68,9 @@ class App extends Component {
 
 
 
-
-
-
+ // onGood={this.handleGood}
+        // onNeutral={this.handleNeutral}
+        // onBad={this.handleBad}
 
   //*  handle fn for buttons   //
  

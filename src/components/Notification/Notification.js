@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Notification.css';
+// import './Notification.css';
 
 const Notification = ({ message }) => {
-  return <Notification message="There is no feedback">{message}</Notification>;
+  return <p>{message}</p>;
 };
 
 export default Notification;
