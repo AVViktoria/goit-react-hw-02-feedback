@@ -5,6 +5,7 @@ import React, { Component } from 'react';
 import FeedbackOptions from 'components/FeedbackOptions';
 import Notification from 'components/Notification';
 import Statistics from 'components/Statistics';
+import Section from 'components/Section';
 
 
 // //*      Root      //
@@ -36,7 +37,7 @@ class App extends Component {
   //*  percentage Fn   //
   countPositiveFeedbackPercentage = () => {
     const { good } = this.state;
-    return  this.countTotalFeedback() ? Math.round((good / this.countTotalFeedback()) * 100) : 0;
+    return  this.countTotalFeedback() ? Math.round(good / this.countTotalFeedback() * 100) : 0;
     
   }
 
@@ -46,7 +47,7 @@ class App extends Component {
 
     return (
       <>
-        <h1 className="mainTitle">Please leave feedback</h1>
+        <Section title = "Please leave feedback">
 
         <FeedbackOptions
           options={options}
@@ -62,7 +63,7 @@ class App extends Component {
           <Notification message="There is no feedback" /> :
           <Statistics good={good} neutral={neutral} bad={bad} total={this.countTotalFeedback()} positiveFeedback={this.countPositiveFeedbackPercentage()} />
         }
-    
+    </Section>
       </>
       
     );
