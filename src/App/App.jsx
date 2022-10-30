@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../index.scss'
 
 //*    components    //
 import FeedbackOptions from 'components/FeedbackOptions';
@@ -39,7 +40,7 @@ class App extends Component {
     const { good, neutral, bad } = this.state;
     const options = Object.keys(this.state);
     return (
-      <>
+      <div className = "container" >
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={options}
@@ -59,7 +60,7 @@ class App extends Component {
             />
           )}
         </Section>
-      </>
+      </div>
     );
   }
 }

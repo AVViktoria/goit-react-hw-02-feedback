@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 
 const Statistics = ({ good, neutral, bad, total, positiveFeedback }) => {
   return (
-    <ul>
-      <li>Good: {good}</li>
-      <li>Neutral: {neutral}</li>
-      <li>Bad:{bad}</li>
-      <li>Total:{total}</li>
-      <li>Positive feedback:{positiveFeedback}%</li>
+    <ul className="statListBox">
+      <li className="statList">Good: {good}</li>
+      <li className="statList">Neutral: {neutral}</li>
+      <li className="statList">Bad: {bad}</li>
+      <li className="statList">Total: {total}</li>
+      <li className="statList">Positive feedback: {positiveFeedback}%</li>
     </ul>
   );
 };
