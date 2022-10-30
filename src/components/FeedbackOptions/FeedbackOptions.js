@@ -12,12 +12,6 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
         >
           {option}
         </button>
-        // <button type="button" onClick={onNeutral}>
-        //   Neutral
-        // </button>
-        // <button type="button" onClick={onBad}>
-        //   Bad
-        // </button>
       ))}
     </>
   );
@@ -25,6 +19,6 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
 export default FeedbackOptions;
 
 FeedbackOptions.propTypes = {
-  options: PropTypes.string.isRequired,
-  onLeaveFeedback: PropTypes.string.isRequired,
+  options: PropTypes.node,
+  onLeaveFeedback: PropTypes.func.isRequired,
 };

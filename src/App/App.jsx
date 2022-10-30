@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import './Feedback.css';
 
 //*    components    //
 import FeedbackOptions from 'components/FeedbackOptions';
@@ -10,11 +9,7 @@ import Section from 'components/Section';
 
 // //*      Root      //
 class App extends Component {
-  // static defaultProps = {
-  //     good: 0,
-  //     neutral: 0,
-  //     bad: 0,
-  //   };
+
   state = {
     good: 0,
     neutral: 0,
@@ -65,34 +60,3 @@ class App extends Component {
 
   export default App;
 
-
-
-
- // onGood={this.handleGood}
-        // onNeutral={this.handleNeutral}
-        // onBad={this.handleBad}
-
-  //*  handle fn for buttons   //
- 
-  // handleGood = () => {
-  //   this.setState(prevState => {
-  //     return {
-  //       good: prevState.good + 1,
-  //     };
-  //   });
-  // };
-  // handleNeutral = () => {
-  //   this.setState(prevState => {
-  //     return {
-  //       neutral: prevState.neutral + 1,
-  //     };
-  //   });
-  // };
-  // handleBad = () => {
-  //   this.setState(prevState => {
-  //     return {
-  //       bad: prevState.bad + 1,
-  //     };
-  //   });
-  // };
-  
